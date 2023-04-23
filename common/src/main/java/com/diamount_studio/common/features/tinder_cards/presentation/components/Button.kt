@@ -12,18 +12,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
+import com.diamount_studio.common.theme.ColorPalette
 
 @Composable
 fun CircleButton(
+    colorPalette: ColorPalette,
     onClick: () -> Unit,
     icon: ImageVector,
 ) {
     IconButton(
         modifier = Modifier
             .clip(CircleShape)
-            .background(MaterialTheme.colors.primary)
+            .background(colorPalette.colorButton)
             .size(56.dp)
-            .border(2.dp, MaterialTheme.colors.primary, CircleShape),
+            .border(2.dp, colorPalette.colorButton, CircleShape),
         onClick = onClick
     ) {
         Icon(icon, null,

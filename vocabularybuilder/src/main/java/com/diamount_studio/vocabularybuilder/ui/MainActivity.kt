@@ -1,4 +1,4 @@
-package com.diamount_studio.vocabularybuilder
+package com.diamount_studio.vocabularybuilder.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.diamount_studio.common.features.tinder_cards.lib.ExperimentalSwipeableCardApi
 import com.diamount_studio.common.features.tinder_cards.presentation.TinderCards
 import com.diamount_studio.common.features.swipeable_cards.presentation.SwipeableCards
+import com.diamount_studio.vocabularybuilder.ui.VocabularyBuilderScreen
 import com.diamount_studio.vocabularybuilder.ui.theme.LinguaSwipeTheme
 
 @OptIn(ExperimentalSwipeableCardApi::class)
@@ -24,9 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
-                   // SwipeableCards()
-                    TinderCards()
+                    VocabularyBuilderScreen()
                 }
             }
         }

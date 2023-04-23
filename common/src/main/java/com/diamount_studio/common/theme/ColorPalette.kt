@@ -6,4 +6,5 @@ interface ColorPalette {
     val primary: Color
     val secondary: Color
     val background: Color
+    val colorButton:Color
 }

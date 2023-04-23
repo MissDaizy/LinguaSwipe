@@ -101,6 +101,7 @@ fun TinderCards(colorPalette: ColorPalette) {
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 CircleButton(
+                    colorPalette,
                     onClick = {
                         scope.launch {
                             val last = states.reversed()
@@ -113,6 +114,7 @@ fun TinderCards(colorPalette: ColorPalette) {
                     icon = Icons.Rounded.Close
                 )
                 CircleButton(
+                    colorPalette,
                     onClick = {
                         scope.launch {
                             val last = states.reversed()
